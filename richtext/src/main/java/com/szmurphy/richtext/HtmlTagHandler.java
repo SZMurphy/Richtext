@@ -106,8 +106,6 @@ public class HtmlTagHandler {
         }
 
         private void handleStartTag(String tag, Attributes attributes) {
-//            LogUtil.d("----tag:"+tag+",Attributes:"+attributes);
-
             if (tag.equalsIgnoreCase("br")) {
                 // We don't need to handle this. TagSoup will ensure that there's a </br> for each <br>
                 // so we can safely emite the linebreaks when we handle the close tag.
@@ -366,7 +364,7 @@ public class HtmlTagHandler {
 //                            widget.getContext().startActivity(intent);
 
 //                            Intent appIntent = new Intent();
-//                            appIntent.setComponent(new ComponentName("com.pax.retaillinkdemo", "com.pax.retaillinkdemo.MainActivity"));
+//                            appIntent.setComponent(new ComponentName("com.szmurphy.demo", "com.szmurphy.demo.MainActivity"));
 //                            appIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 //                            widget.getContext().startActivity(appIntent);
 
